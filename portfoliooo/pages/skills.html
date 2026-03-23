@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishalii | Skills</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Vaishalii <span>Bhandarii</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle" class="text-xl text-slate-300 hover:text-brown-400 transition-colors ml-2 md:ml-4" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-brown-400 transition-colors ml-4" aria-label="Toggle Mobile Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- SKILLS -->
+    <section id="skills" class="pb-20 pt-20">
+        <h2 class="section-title reveal text-center mb-16">Skills & <span>Expertise</span></h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Languages -->
+            <div class="card reveal p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-code text-3xl text-brown-400"></i>
+                    <h3 class="text-xl font-bold text-beige-200">Languages</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">C</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">C++</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">Python</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">Java</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Data Engineering & Analytics -->
+            <div class="card reveal p-8 lg:col-span-2">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-chart-line text-3xl text-brown-500"></i>
+                    <h3 class="text-xl font-bold text-beige-200">Data Engineering & Analytics</h3>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-brown-500/30 text-xs font-mono text-center text-beige-300">Python</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-brown-500/30 text-xs font-mono text-center text-beige-300">Pandas</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-brown-500/30 text-xs font-mono text-center text-beige-300">NumPy</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-brown-500/30 text-xs font-mono text-center text-beige-300">Matplotlib</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-center text-beige-300">Seaborn</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-center text-beige-300">Scikit-learn</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-center text-beige-300">SQL</span>
+                    <span class="px-3 py-2 rounded-lg bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-center text-beige-300">Power BI</span>
+                </div>
+            </div>
+
+            <!-- Developer Tools -->
+            <div class="card reveal p-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-screwdriver-wrench text-3xl text-brown-600"></i>
+                    <h3 class="text-xl font-bold text-beige-200">Dev Tools</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">VS Code</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">Git</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-brown-500/20 text-xs font-mono text-beige-300">GitHub</span>
+                </div>
+            </div>
+
+            <!-- Core Competencies -->
+            <div class="card reveal p-8 md:col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-4 mb-6">
+                    <i class="fa-solid fa-brain text-3xl text-beige-400"></i>
+                    <h3 class="text-xl font-bold text-beige-200">Core</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-beige-300">DSA</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-beige-300">OOP</span>
+                    <span class="px-3 py-1 rounded-full bg-brown-900/10 border border-beige-500/20 text-xs font-mono text-beige-300">DBMS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Â© 2026 Vaishalii | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../main.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificates | Vaishalii Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Vaishalii <span>Bhandarii</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html" class="active">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle" class="text-xl text-slate-300 hover:text-brown-400 transition-colors ml-2 md:ml-4" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-brown-400 transition-colors ml-4" aria-label="Toggle Mobile Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="pb-20 pt-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title reveal text-center mb-16">Accredited <span>Achievements</span></h2>
+
+            <!-- Category: AI & Generative AI -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 reveal">
+                    <i class="fa-solid fa-brain text-brown-400"></i>
+                    AI & Generative AI
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cert 1 -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <div class="w-full aspect-video bg-white/5 rounded-lg mb-4 flex items-center justify-center border border-white/10">
+                            <i class="fa-solid fa-file-pdf text-6xl text-brown-400"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">ChatGPT Essentials</h4>
+                        <p class="text-xs text-slate-400 mb-4">Mastery of ChatGPT-4, GenAI & LLM fundamentals.</p>
+                        <a href="../assets/certificates/chatgpt.pdf" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Certificate</a>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <div class="w-full aspect-video bg-white/5 rounded-lg mb-4 flex items-center justify-center border border-white/10">
+                            <i class="fa-solid fa-file-pdf text-6xl text-brown-400"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Generative AI Mastery</h4>
+                        <p class="text-xs text-slate-400 mb-4">Comprehensive training and certification in Generative AI tools.</p>
+                        <a href="../assets/certificates/generative ai.pdf" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Certificate</a>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <div class="w-full aspect-video bg-white/5 rounded-lg mb-4 flex items-center justify-center border border-white/10">
+                            <i class="fa-solid fa-file-pdf text-6xl text-brown-400"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Infosys Certification</h4>
+                        <p class="text-xs text-slate-400 mb-4">Skill development program by Infosys Springboard.</p>
+                        <a href="../assets/certificates/coursecertificateinfosys.pdf" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Cloud & Systems -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 reveal">
+                    <i class="fa-solid fa-server text-beige-400"></i>
+                    Cloud & Systems
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cert 4 -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <a href="../assets/certificates/neptel.png" target="_blank">
+                            <img src="../assets/certificates/neptel.png" alt="Cloud Computing" class="w-full aspect-video object-cover rounded-lg mb-4 border border-white/5 hover:border-brown-500/30 transition-all">
+                        </a>
+                        <h4 class="font-bold text-lg mb-2">Cloud Computing</h4>
+                        <p class="text-xs text-slate-400 mb-4">NPTEL Elite Certification from IIT Kharagpur.</p>
+                        <a href="../assets/certificates/neptel.png" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Full Size</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Theory & Foundations -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 reveal">
+                    <i class="fa-solid fa-microchip text-beige-500"></i>
+                    Computer Science Theory
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cert 5 -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <a href="../assets/certificates/computational.png" target="_blank">
+                            <img src="../assets/certificates/computational.png" alt="Computational Theory" class="w-full aspect-video object-cover rounded-lg mb-4 border border-white/5 hover:border-brown-500/30 transition-all">
+                        </a>
+                        <h4 class="font-bold text-lg mb-2">Computational Theory</h4>
+                        <p class="text-xs text-slate-400 mb-4">Finite Automata & Language Principles.</p>
+                        <a href="../assets/certificates/computational.png" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Full Size</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Additional Certifications -->
+            <div class="mb-20">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3 reveal">
+                    <i class="fa-solid fa-certificate text-brown-600"></i>
+                    Additional Certifications
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cert 6 -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <a href="../assets/certificates/new onw.png" target="_blank">
+                            <img src="../assets/certificates/new onw.png" alt="Recent Certification" class="w-full aspect-video object-cover rounded-lg mb-4 border border-white/5 hover:border-brown-500/30 transition-all">
+                        </a>
+                        <h4 class="font-bold text-lg mb-2">Recent Certification</h4>
+                        <p class="text-xs text-slate-400 mb-4">Advanced skill development & validation.</p>
+                        <a href="../assets/certificates/new onw.png" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Full Size</a>
+                    </div>
+                    <!-- Training Cert -->
+                    <div class="card reveal p-5 border-brown-500/30">
+                        <a href="../assets/certificates/training.png" target="_blank">
+                            <img src="../assets/certificates/training.png" alt="Training Certificate" class="w-full aspect-video object-cover rounded-lg mb-4 border border-white/5 hover:border-brown-500/30 transition-all">
+                        </a>
+                        <h4 class="font-bold text-lg mb-2">Training Certificate</h4>
+                        <p class="text-xs text-slate-400 mb-4">Professional training program completion & certification.</p>
+                        <a href="../assets/certificates/training.png" target="_blank" class="btn secondary w-full py-2 text-xs text-center justify-center">View Full Size</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Â© 2026 Vaishalii | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    
+    <script src="../main.js"></script>
+</body>
+
+</html>
+

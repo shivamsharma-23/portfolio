@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishalii | Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brown: { 400: '#a67b5b', 500: '#8B4513', 600: '#6f4e37' },
+                        beige: { 100: '#fdfcf0', 200: '#f5f5dc', 300: '#e8e4c9' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="../index.html" class="nav-logo">Vaishalii <span>Bhandarii</span></a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="certificates.html">Certifications</a>
+            <a href="extra-curricular.html">Activities</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+            <button id="theme-toggle" class="text-xl text-slate-300 hover:text-brown-400 transition-colors ml-2 md:ml-4" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-brown-400 transition-colors ml-4" aria-label="Toggle Mobile Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="pb-20 pt-20">
+        <h2 class="section-title reveal text-center mb-16">My <span>Projects</span></h2>
+
+        <div style="margin-bottom: 40px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+            <button class="btn primary filter-btn" data-filter="all">All Projects</button>
+            <button class="btn secondary filter-btn" data-filter="data-science">Data Science</button>
+            <button class="btn secondary filter-btn" data-filter="machine-learning">Machine Learning</button>
+            <button class="btn secondary filter-btn" data-filter="software">Software Dev</button>
+        </div>
+
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="card data-science reveal project-card">
+                <h3><i class="fa-solid fa-chart-pie"></i> E-Commerce Trends Dashboard</h3>
+                <p>Interactive Power BI dashboard analyzing digital platform usage and e-commerce trends with KPI cards, slicers, and charts derived from survey data.</p>
+                <div class="project-tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Power Query</span>
+                    <span class="tag">DAX</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/vvaishalibhandari_powerbi-dataanalytics-dashboarddesign-activity-7406830965676974080-mY9F?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfCWrABsqYbBTyoPurTiYcuqlaKzqDM1cE" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card machine-learning reveal project-card">
+                <h3><i class="fa-solid fa-wind"></i> Air Quality ML Analysis</h3>
+                <p>End-to-end Air Quality ML project involving data preprocessing, EDA, visualization, and modeling using Linear Regression, KNN, and K-Means clustering.</p>
+                <div class="project-tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">EDA</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/vvaishalibhandari_airquality-machinelearning-datascience-activity-7406310452965601280-zxLx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfCWrABsqYbBTyoPurTiYcuqlaKzqDM1cE" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card software reveal project-card">
+                <h3><i class="fa-solid fa-gamepad"></i> Flappy Bird Java Clone</h3>
+                <p>A complete Flappy Bird clone built from scratch using Java OOP principles, Swing for custom GUI, real-time game mechanics, and Data Structures.</p>
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">OOP</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/vvaishalibhandari_java-datastructures-dsa-activity-7349017611495514112-gIGr?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfCWrABsqYbBTyoPurTiYcuqlaKzqDM1cE" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="card machine-learning reveal project-card">
+                <h3><i class="fa-solid fa-user-secret"></i> Fake Profile Detection</h3>
+                <p>Supervised ML project aiming to detect fake profiles based on behavioral data using Python, Pandas, Sklearn, and exploring models like Logistic Regression and XGBoost.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">ML</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/vvaishalibhandari_python-machinelearning-supervisedlearning-activity-7316511778778009600-e2a5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfCWrABsqYbBTyoPurTiYcuqlaKzqDM1cE" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="card data-science reveal project-card">
+                <h3><i class="fa-solid fa-table"></i> Interactive Excel Dashboard</h3>
+                <p>A visual and interactive Excel dashboard created from raw data, featuring dynamic filters, user-friendly layouts, and comprehensive data visualization.</p>
+                <div class="project-tags">
+                    <span class="tag">Excel</span>
+                    <span class="tag">Visualization</span>
+                    <span class="tag">Analysis</span>
+                </div>
+                <div class="btn-group" style="margin-top: 20px;">
+                    <a href="https://www.linkedin.com/posts/vvaishalibhandari_collegeproject-exceldashboard-datavisualization-activity-7315815064685449217-kzQe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEfCWrABsqYbBTyoPurTiYcuqlaKzqDM1cE" class="btn primary" style="padding: 8px 16px; font-size: 0.85rem;" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn Post</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Â© 2026 Vaishalii | Portfolio. Designed for the Future.</p>
+    </footer>
+
+    <!-- FEATURES SCRIPTS -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../main.js"></script>
+</body>
+
+</html>
+
